@@ -12,14 +12,13 @@ code {
     monospace;
 }
 
-h1 {
-  border-bottom: 2px solid #ddd;
-  margin: 0;
+nav {
+  border-bottom: 2px solid #eee;
   padding: 16px;
 }
 
 button {
-  background-color: #ffa31a;
+  background-color: green;
   border: none;
   border-radius: 8px;
   color: white;
@@ -31,6 +30,11 @@ button {
   font-weight: bold;
   outline: none;
   padding: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 input,
@@ -48,13 +52,18 @@ select {
   padding: 16px;
 }
 
-a {
-  text-decoration: none;
+.app-heading {
+  display: inline-block;
+  margin: 8px;
 }
 
-.page {
-  width: 100vw;
-  height: 100vh;
+.logged-in-as {
+  float: right;
+  margin-right: 16px;
+}
+
+.sign-out-button {
+  float: right;
 }
 
 .centered-container {
@@ -62,74 +71,39 @@ a {
   margin: auto;
 }
 
-.back-button {
-  margin: 16px;
-}
-
-.page-container {
-  display: flex;
-}
-
-.column {
-  flex: 1;
-}
-
-.list-container {
-  padding: 16px;
-  margin: auto;
-  max-width: 600px;
+.section-heading {
+  border-bottom: 1px solid black;
+  padding-bottom: 16px;
 }
 
 .list-item {
+  align-items: center;
   border-bottom: 1px solid #ddd;
   display: flex;
   padding: 16px;
 }
 
-.list-item > h3 {
-  flex: 2;
-}
-
-.list-item > p {
-  align-items: center;
-  display: flex;
-  flex: 6;
-  padding-left: 16px;
-}
-
-.list-item > .right-action {
+.list-item-data {
   flex: 1;
+}
+
+.new-message-form {
+  padding: 16px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.small-x {
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 24px;
-  padding-top: 1px;
-  position: relative;
-  text-align: center;
-  width: 24px;
+.new-message-form input {
+  flex: 8;
 }
 
-.the-x {
-  font-weight: bold;
-  left: 7px;
-  position: absolute;
-  top: 2px;
+.new-message-form button {
+  flex: 1;
 }
 
-.search-list-item {
-  cursor: pointer;
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
-}
-
-.search-list-item:hover {
-  background-color: #eee;
+.error-message {
+  background-color: #ffccbb;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .full-width {
@@ -143,8 +117,4 @@ a {
 
 .space-after {
   margin-bottom: 16px;
-}
-
-.shopping-list-button {
-  background-color: #ade25d;
 }
