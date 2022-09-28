@@ -9,7 +9,6 @@ export const CreateGroupPage = () => {
   const createGroup = async () => {
     const response = await postWithCredentials('/groups', { name });
     const { newGroupId } = await response.json();
-
     history.push(`groups/${newGroupId}`);
   };
 
