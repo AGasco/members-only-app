@@ -1,5 +1,12 @@
 import React from 'react';
 
-export const GroupsList = () => {
-  return <div>GroupsList</div>;
-};
+export const GroupsList = ({ isLoading, groups, ListItemComponent }) =>
+  isLoading ? (
+    <p>Loading...</p>
+  ) : (
+    <>
+      {groups?.map((group) => (
+        <ListItemComponent key={group._id} group={group} />
+      ))}
+    </>
+  );

@@ -4,3 +4,5 @@ export { GroupsListPage } from './GroupsListPage';
 export { GroupsList } from './GroupsList';
 export { GroupsListItem } from './GroupsListItem';
 export { MyGroupsListItem } from './MyGroupsListItem';
+export { useGroups } from './useGroups';
+export { useUserGroups } from './useUserGroups';
